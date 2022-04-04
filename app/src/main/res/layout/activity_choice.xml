@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pang"
+    tools:context=".presentor.firstActivity.ChoiceActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Здраствуйте"
+        android:textColor="#DA0E0E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Выберите тренировку"
+        android:textColor="#C61A54"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/img_strong"
+        android:layout_width="233dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/strongers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/img_press"
+        android:layout_width="224dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_strong"
+        app:srcCompat="@drawable/pressa" />
+
+    <ImageView
+        android:id="@+id/img_weight_loss"
+        android:layout_width="220dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/weight_loss"
+        app:layout_constraintEnd_toEndOf="@+id/img_press"
+        app:layout_constraintStart_toStartOf="@+id/img_press"
+        app:layout_constraintTop_toBottomOf="@+id/img_press" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
